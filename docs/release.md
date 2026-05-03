@@ -1,5 +1,7 @@
 # Release and Upload Plan
 
+Simplified Chinese docs: [docs/zh-CN/README.md](zh-CN/README.md)
+
 ## GitHub
 
 ```bash

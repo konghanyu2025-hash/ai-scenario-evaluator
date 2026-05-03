@@ -1,5 +1,7 @@
 # Architecture
 
+Simplified Chinese docs: [docs/zh-CN/README.md](zh-CN/README.md)
+
 AI Scenario Evaluator is a TypeScript monorepo.
 
 ## Packages

@@ -37,8 +37,8 @@ export default function SettingsPage() {
           <table className="w-full min-w-[720px] border-collapse text-sm">
             <thead>
               <tr className="border-b border-line text-left text-ink/60">
-                <th className="py-2 pr-3">Preset</th>
-                <th className="py-2 pr-3">Provider</th>
+                <th className="py-2 pr-3">预设</th>
+                <th className="py-2 pr-3">提供商</th>
                 <th className="py-2 pr-3">默认模型</th>
                 <th className="py-2 pr-3">需要 Key</th>
                 <th className="py-2 pr-3">说明</th>

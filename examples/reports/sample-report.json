@@ -12,12 +12,12 @@
     "judgeCount": 1,
     "totalModelCalls": 8,
     "totalJudgeCalls": 8,
-    "bestModel": "Mock Balanced"
+    "bestModel": "模拟均衡模型"
   },
   "modelRankings": [
     {
       "candidateId": "mock-balanced",
-      "candidateName": "Mock Balanced",
+      "candidateName": "模拟均衡模型",
       "provider": "mock",
       "model": "mock-balanced",
       "totalScore": 83.4,
@@ -40,7 +40,7 @@
   "recommendations": [
     {
       "candidateId": "mock-balanced",
-      "title": "Mock Balanced 是当前最优选择",
+      "title": "模拟均衡模型是当前最优选择",
       "body": "综合分 83.4，适合严谨客服、结构化输出和风险提示。",
       "severity": "info"
     }

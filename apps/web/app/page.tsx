@@ -28,7 +28,7 @@ import type {
 const defaultCandidates: ProviderConfig[] = [
   {
     id: "mock-balanced",
-    name: "Mock Balanced",
+    name: "模拟均衡模型",
     provider: "mock",
     model: "mock-balanced",
     temperature: 0.2,
@@ -36,7 +36,7 @@ const defaultCandidates: ProviderConfig[] = [
   },
   {
     id: "mock-creative",
-    name: "Mock Creative",
+    name: "模拟创意模型",
     provider: "mock",
     model: "mock-creative",
     temperature: 0.4,
@@ -47,7 +47,7 @@ const defaultCandidates: ProviderConfig[] = [
 const defaultJudges: ProviderConfig[] = [
   {
     id: "mock-judge",
-    name: "Mock Judge",
+    name: "模拟裁判",
     provider: "mock",
     model: "mock-judge",
     temperature: 0,
@@ -202,7 +202,7 @@ export default function HomePage() {
                   onChange={(event) => setLanguage(event.target.value as Language)}
                 >
                   <option value="zh-CN">中文</option>
-                  <option value="en-US">English</option>
+                  <option value="en-US">英文</option>
                 </select>
               </Field>
               <Field label="难度">
@@ -437,7 +437,7 @@ function ModelPanel({
               ...models,
               {
                 id: `${title}_${models.length + 1}`.replace(/\s+/g, "_"),
-                name: "New Model",
+                name: "新模型",
                 provider: "openai-compatible",
                 model: "gpt-4o-mini",
                 baseURL: "",
@@ -456,7 +456,7 @@ function ModelPanel({
         {models.map((model, index) => (
           <div key={model.id || index} className="rounded-md border border-line bg-paper p-3">
             <div className="grid gap-3 md:grid-cols-4">
-              <Field label="Preset">
+              <Field label="预设">
                 <select
                   className="focus-ring w-full rounded-md border border-line bg-white px-3 py-2 text-sm"
                   value={providerPresets.find((preset) => preset.provider === model.provider && preset.baseURL === model.baseURL)?.id || ""}
@@ -477,14 +477,14 @@ function ModelPanel({
                   onChange={(event) => update(index, { name: event.target.value })}
                 />
               </Field>
-              <Field label="Provider">
+              <Field label="提供商">
                 <input
                   className="focus-ring w-full rounded-md border border-line bg-white px-3 py-2 text-sm"
                   value={model.provider}
                   onChange={(event) => update(index, { provider: event.target.value })}
                 />
               </Field>
-              <Field label="Model ID">
+              <Field label="模型 ID">
                 <input
                   className="focus-ring w-full rounded-md border border-line bg-white px-3 py-2 text-sm"
                   value={model.model}
@@ -510,7 +510,7 @@ function ModelPanel({
                   onChange={(event) => update(index, { apiKey: event.target.value })}
                 />
               </Field>
-              <Field label="Temp">
+              <Field label="温度">
                 <input
                   className="focus-ring w-full rounded-md border border-line bg-white px-3 py-2 text-sm"
                   min={0}
@@ -521,7 +521,7 @@ function ModelPanel({
                   onChange={(event) => update(index, { temperature: Number(event.target.value) })}
                 />
               </Field>
-              <Field label="Tokens">
+              <Field label="最大 Token">
                 <input
                   className="focus-ring w-full rounded-md border border-line bg-white px-3 py-2 text-sm"
                   min={128}
@@ -575,7 +575,7 @@ function ReportPanel({
         </div>
         <div className="flex flex-wrap gap-2">
           <DownloadButton disabled={exporting} icon={<FileJson className="h-4 w-4" />} label="JSON" onClick={() => onDownload("json")} />
-          <DownloadButton disabled={exporting} icon={<FileText className="h-4 w-4" />} label="Markdown" onClick={() => onDownload("markdown")} />
+          <DownloadButton disabled={exporting} icon={<FileText className="h-4 w-4" />} label="MD" onClick={() => onDownload("markdown")} />
           <DownloadButton disabled={exporting} icon={<Download className="h-4 w-4" />} label="HTML" onClick={() => onDownload("html")} />
         </div>
       </div>

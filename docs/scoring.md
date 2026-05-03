@@ -1,5 +1,7 @@
 # Scoring
 
+Simplified Chinese docs: [docs/zh-CN/README.md](zh-CN/README.md)
+
 The scoring system is intentionally mixed rather than fully subjective.
 
 ## Rubric

@@ -2,9 +2,9 @@ import Link from "next/link";
 import { ArrowLeft, BarChart3 } from "lucide-react";
 
 const rows = [
-  { name: "Mock Balanced", score: 83.4, confidence: "medium", strength: "任务完成度、约束遵守" },
-  { name: "Mock Creative", score: 81.9, confidence: "medium", strength: "内容表达、用户体验" },
-  { name: "Mock Weak", score: 54.2, confidence: "low", strength: "基础响应" }
+  { name: "模拟均衡模型", score: 83.4, confidence: "medium", strength: "任务完成度、约束遵守" },
+  { name: "模拟创意模型", score: 81.9, confidence: "medium", strength: "内容表达、用户体验" },
+  { name: "模拟弱模型", score: 54.2, confidence: "low", strength: "基础响应" }
 ];
 
 export default function DemoPage() {
@@ -18,7 +18,7 @@ export default function DemoPage() {
         <div className="flex items-center justify-between gap-3">
           <div>
             <h1 className="text-2xl font-semibold">示例报告</h1>
-            <p className="mt-2 text-sm text-ink/65">主题：跨境电商客服。示例数据来自 mock provider，可用于理解报告结构。</p>
+            <p className="mt-2 text-sm text-ink/65">主题：跨境电商客服。示例数据来自模拟模型，可用于理解报告结构。</p>
           </div>
           <BarChart3 className="h-8 w-8 text-teal" aria-hidden />
         </div>

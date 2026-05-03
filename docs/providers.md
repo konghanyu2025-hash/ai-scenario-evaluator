@@ -1,5 +1,7 @@
 # Providers
 
+Simplified Chinese docs: [docs/zh-CN/README.md](zh-CN/README.md)
+
 All model providers implement the shared `ModelProvider` interface.
 
 ```ts

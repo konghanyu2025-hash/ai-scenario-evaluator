@@ -1,5 +1,7 @@
 # Deployment
 
+Simplified Chinese docs: [docs/zh-CN/README.md](zh-CN/README.md)
+
 ## Vercel
 
 Use the repository root as the Vercel project.

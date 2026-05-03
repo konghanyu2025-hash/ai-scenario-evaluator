@@ -1,5 +1,7 @@
 # AI Scenario Evaluator
 
+[English](README.md) | [简体中文](README.zh-CN.md)
+
 AI Scenario Evaluator is an open-source scenario-based model evaluation system. Instead of using a fixed benchmark, users enter a topic, the system generates realistic application scenarios, runs multiple models against the same tasks, judges the outputs with rubric-based AI scoring plus deterministic checks, and exports reproducible reports.
 
 ## What It Does

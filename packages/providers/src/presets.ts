@@ -24,7 +24,7 @@ export const providerPresets: ProviderPreset[] = [
     baseURL: recommendedRelayBaseURL,
     defaultModel: "gpt-4o-mini",
     requiresApiKey: true,
-    description: "OpenAI-compatible relay preset for your recommended gateway."
+    description: "推荐中转服务预设，兼容 OpenAI Chat Completions 接口。"
   },
   {
     id: "openai-compatible",
@@ -32,7 +32,7 @@ export const providerPresets: ProviderPreset[] = [
     provider: "openai-compatible",
     defaultModel: "gpt-4o-mini",
     requiresApiKey: true,
-    description: "Any /v1/chat/completions compatible service."
+    description: "适用于任何兼容 /v1/chat/completions 的服务。"
   },
   {
     id: "openai",
@@ -41,7 +41,7 @@ export const providerPresets: ProviderPreset[] = [
     baseURL: "https://api.openai.com/v1",
     defaultModel: "gpt-4o-mini",
     requiresApiKey: true,
-    description: "OpenAI chat completions compatible preset."
+    description: "OpenAI 官方接口预设。"
   },
   {
     id: "anthropic",
@@ -50,7 +50,7 @@ export const providerPresets: ProviderPreset[] = [
     baseURL: "https://api.anthropic.com",
     defaultModel: "claude-3-5-sonnet-latest",
     requiresApiKey: true,
-    description: "Anthropic Messages API preset."
+    description: "Anthropic Messages API 预设。"
   },
   {
     id: "google",
@@ -59,7 +59,7 @@ export const providerPresets: ProviderPreset[] = [
     baseURL: "https://generativelanguage.googleapis.com/v1beta",
     defaultModel: "gemini-1.5-flash",
     requiresApiKey: true,
-    description: "Google Generative Language API preset."
+    description: "Google Generative Language API 预设。"
   },
   {
     id: "ollama",
@@ -68,14 +68,14 @@ export const providerPresets: ProviderPreset[] = [
     baseURL: "http://127.0.0.1:11434",
     defaultModel: "llama3.1",
     requiresApiKey: false,
-    description: "Local Ollama model server."
+    description: "本地 Ollama 模型服务。"
   },
   {
     id: "mock",
-    name: "Mock",
+    name: "模拟模型",
     provider: "mock",
     defaultModel: "mock-balanced",
     requiresApiKey: false,
-    description: "Deterministic local provider for demos and tests."
+    description: "用于演示和测试的本地确定性模型。"
   }
 ];

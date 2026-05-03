@@ -7,5 +7,5 @@ test("runs the mock workbench flow", async ({ page }) => {
   await expect(page.getByText("已生成")).toBeVisible({ timeout: 20_000 });
   await page.getByRole("button", { name: "运行评测" }).click();
   await expect(page.getByRole("heading", { name: "评测报告" })).toBeVisible({ timeout: 30_000 });
-  await expect(page.getByRole("cell", { name: "Mock Balanced" })).toBeVisible();
+  await expect(page.getByRole("cell", { name: "模拟均衡模型" })).toBeVisible();
 });

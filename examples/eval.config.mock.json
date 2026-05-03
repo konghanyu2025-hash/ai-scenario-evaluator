@@ -7,13 +7,13 @@
   "models": [
     {
       "id": "mock-balanced",
-      "name": "Mock Balanced",
+      "name": "模拟均衡模型",
       "provider": "mock",
       "model": "mock-balanced"
     },
     {
       "id": "mock-creative",
-      "name": "Mock Creative",
+      "name": "模拟创意模型",
       "provider": "mock",
       "model": "mock-creative"
     }
@@ -21,7 +21,7 @@
   "judges": [
     {
       "id": "mock-judge",
-      "name": "Mock Judge",
+      "name": "模拟裁判",
       "provider": "mock",
       "model": "mock-judge"
     }
