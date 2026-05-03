@@ -1,0 +1,41 @@
+{
+  "topic": "客服机器人",
+  "language": "zh-CN",
+  "scenarioCount": 5,
+  "tasksPerScenario": 2,
+  "difficulty": "mixed",
+  "models": [
+    {
+      "id": "model-a",
+      "name": "Model A",
+      "provider": "openai-compatible",
+      "model": "gpt-4o-mini",
+      "baseURL": "https://example.com/v1",
+      "apiKeyEnv": "MODEL_A_API_KEY",
+      "temperature": 0.2,
+      "maxTokens": 1200
+    },
+    {
+      "id": "local-mock",
+      "name": "Mock Balanced",
+      "provider": "mock",
+      "model": "mock-balanced"
+    }
+  ],
+  "judges": [
+    {
+      "id": "judge-a",
+      "name": "Judge A",
+      "provider": "openai-compatible",
+      "model": "gpt-4o-mini",
+      "baseURL": "https://example.com/v1",
+      "apiKeyEnv": "JUDGE_API_KEY",
+      "temperature": 0,
+      "maxTokens": 1600
+    }
+  ],
+  "output": {
+    "formats": ["json", "markdown", "html"],
+    "dir": "./results"
+  }
+}

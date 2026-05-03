@@ -1,0 +1,11 @@
+services:
+  web:
+    build: .
+    ports:
+      - "3000:3000"
+    env_file:
+      - .env
+    environment:
+      NEXT_PUBLIC_APP_NAME: AI Scenario Evaluator
+      NEXT_PUBLIC_RECOMMENDED_RELAY_NAME: ${NEXT_PUBLIC_RECOMMENDED_RELAY_NAME:-Your Relay Name}
+      NEXT_PUBLIC_RECOMMENDED_RELAY_BASE_URL: ${NEXT_PUBLIC_RECOMMENDED_RELAY_BASE_URL:-https://your-relay.example.com/v1}

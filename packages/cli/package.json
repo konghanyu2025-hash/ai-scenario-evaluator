@@ -1,0 +1,26 @@
+{
+  "name": "@your-scope/ai-scenario-evaluator",
+  "version": "0.1.0",
+  "description": "CLI for running reproducible AI scenario evaluations locally.",
+  "type": "module",
+  "bin": {
+    "ai-scenario-evaluator": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md"],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aise/core": "workspace:*",
+    "@aise/providers": "workspace:*",
+    "@aise/shared": "workspace:*",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  }
+}

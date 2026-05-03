@@ -1,0 +1,26 @@
+{
+  "name": "ai-scenario-evaluator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Open-source scenario-based AI model evaluator with web, CLI, Docker, and reproducible reports.",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.4",
+  "scripts": {
+    "dev": "pnpm --filter @aise/web dev",
+    "build:packages": "pnpm --filter @aise/shared build && pnpm --filter @aise/providers build && pnpm --filter @aise/core build && pnpm --filter @your-scope/ai-scenario-evaluator build",
+    "build": "pnpm build:packages && pnpm --filter @aise/web build",
+    "typecheck": "pnpm build:packages && pnpm --filter @aise/web typecheck",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "pnpm --filter @aise/web lint",
+    "e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^22.10.2",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}

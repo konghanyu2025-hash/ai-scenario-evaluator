@@ -1,0 +1,53 @@
+{
+  "id": "sample",
+  "topic": "跨境电商客服",
+  "language": "zh-CN",
+  "createdAt": "2026-05-03T00:00:00.000Z",
+  "summary": {
+    "topic": "跨境电商客服",
+    "language": "zh-CN",
+    "scenarioCount": 2,
+    "taskCount": 4,
+    "candidateCount": 2,
+    "judgeCount": 1,
+    "totalModelCalls": 8,
+    "totalJudgeCalls": 8,
+    "bestModel": "Mock Balanced"
+  },
+  "modelRankings": [
+    {
+      "candidateId": "mock-balanced",
+      "candidateName": "Mock Balanced",
+      "provider": "mock",
+      "model": "mock-balanced",
+      "totalScore": 83.4,
+      "confidence": "medium",
+      "averageLatencyMs": 1,
+      "estimatedInputTokens": 1200,
+      "estimatedOutputTokens": 500,
+      "dimensionAverages": {
+        "task_completion": 4.2,
+        "accuracy": 4,
+        "constraint_following": 4.1,
+        "risk_control": 3.9,
+        "usability": 4
+      },
+      "strengths": ["任务完成度", "约束遵守"],
+      "weaknesses": ["暂未发现显著弱项"],
+      "riskFlags": []
+    }
+  ],
+  "recommendations": [
+    {
+      "candidateId": "mock-balanced",
+      "title": "Mock Balanced 是当前最优选择",
+      "body": "综合分 83.4，适合严谨客服、结构化输出和风险提示。",
+      "severity": "info"
+    }
+  ],
+  "scenarioResults": [],
+  "rubric": {
+    "dimensions": [],
+    "totalWeight": 100
+  }
+}

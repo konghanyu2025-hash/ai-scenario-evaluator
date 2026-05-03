@@ -1,0 +1,33 @@
+{
+  "topic": "客服机器人",
+  "language": "zh-CN",
+  "scenarioCount": 3,
+  "tasksPerScenario": 2,
+  "difficulty": "mixed",
+  "models": [
+    {
+      "id": "mock-balanced",
+      "name": "Mock Balanced",
+      "provider": "mock",
+      "model": "mock-balanced"
+    },
+    {
+      "id": "mock-creative",
+      "name": "Mock Creative",
+      "provider": "mock",
+      "model": "mock-creative"
+    }
+  ],
+  "judges": [
+    {
+      "id": "mock-judge",
+      "name": "Mock Judge",
+      "provider": "mock",
+      "model": "mock-judge"
+    }
+  ],
+  "output": {
+    "formats": ["json", "markdown", "html"],
+    "dir": "./results"
+  }
+}
