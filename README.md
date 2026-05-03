@@ -15,6 +15,12 @@ AI Scenario Evaluator is an open-source scenario-based model evaluation system. 
 
 ## Quick Start
 
+Live demo:
+
+```txt
+https://ai-scenario-evaluator.vercel.app
+```
+
 ```bash
 npm install -g corepack
 npx pnpm@9.15.4 install

@@ -16,6 +16,12 @@ AI Scenario Evaluator 是一个开源的场景化 AI 模型评测系统。它不
 
 ## 快速开始
 
+在线 Demo：
+
+```txt
+https://ai-scenario-evaluator.vercel.app
+```
+
 ```bash
 npx pnpm@9.15.4 install
 npx pnpm@9.15.4 dev
