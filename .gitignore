@@ -12,3 +12,5 @@ results
 pnpm-debug.log*
 Dockerfile.local
 *.tsbuildinfo
+
+.vercel
